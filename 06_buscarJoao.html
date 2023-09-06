@@ -8,7 +8,13 @@
     //ENTRADA
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
     //PROCESSAMENTO
-    let joao = [joao]
+    let joao = [];
+    for (let itens of listaDeNomes) {
+        if (itens.toUpperCase().search("JOÃO") >= 0 || itens.toUpperCase().search("JOAO") >= 0) {
+            joao.push(itens);
+        }
+    }
     //SAÍDA
+    alert(joao.join(" - "))
 
 </script>
